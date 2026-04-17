@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="jpg" href="mega.jpg">
     <title>Absensi PT.MEGA PRIMATAMA</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 <body>
@@ -27,16 +30,18 @@
                 <span>Tanggal</span>
             </div>
             <div class="forminput" >
-                <label for="jam"> Shift :</label>
-                <p><input type="radio" id="jamabsen" name="jam"> Pagi</p>
-                <p><input type="radio" id="jamabsen" name="jam"> Siang</p>
-                <p><input type="radio" id="jamabsen" name="jam"> Malam</p>
+                <select id="shift">
+                    <option value="">Shift :</option>
+                    <option>PAGI</option>
+                    <option>SIANG</option>
+                    <option>MALAM</option>
+                </select>
             </div>
             <div>
                 <label for="masuk">Jam masuk :</label>
-                <input type="time" id="appt" name="masuk">
+                <input type="time" id="jam" name="masuk">
                 <label for="pulang">Sampai :</label>
-                <input type="time" id="appt" name="pulang">
+                <input type="time" id="jam" name="pulang">
             </div>
             <div>
                 <label for="upload">Upload Foto : </label>
@@ -49,9 +54,16 @@
 
     <footer>
         <hr>
-        No copyright.
+        <div class="social">
+            <a href="https://www.instagram.com/fzannmhd" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/fzanmhmd" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-fauzan-9b80103b2/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy;2026 MFauzan. All rights reserved.</p>   
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="script.js"></script>
 </script>
