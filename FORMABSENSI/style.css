@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: linear-gradient(180deg,rgb(252, 252, 252),rgb(0, 86, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+img{
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 2px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 25px;
+}
+
+.forminput{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.forminput span{
+    position: absolute;
+    top:3px;
+    left: 8px;
+    color: rgba(82, 82, 82, 0.605);
+    font-size: 14px;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+.forminput input:focus ~ span,
+.forminput input:not(:placeholder-shown) ~ span {
+    top: -8px;    
+    left: 8px;
+    font-size: 10px;
+    color: white;
+    background: rgb(1, 72, 1);
+    padding: 0 6px;
+    border-radius: 10px;
+}
+
+label{
+    padding: 5px 5px;
+
+}
+
+input{
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    box-shadow: 0 3px 1px 1px  rgb(24, 98, 24);
+    transition: all 0.5s;
+}
+
+input:focus{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 5px 10px rgb(0, 51, 0);
+    outline: none;
+    outline-style: groove;
+    outline-color:rgba(8, 101, 0, 0.219)
+}
+
+hr{
+    height: 1px;
+}
+
+i{
+    color: rgb(0, 0, 0);
+    font-size: small;
+}
+
+footer{
+    position: relative;
+    top:100px;
+    width: 100%;
+    text-align: center;
+}

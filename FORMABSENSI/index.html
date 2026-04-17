@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi PT.MEGA PRIMATAMA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <header>
+        <img src="mega.jpg" alt="logopt">
+        <h1>PT.MEGA PRIMATAMA</h1>
+    </header>
+    <main>
+        <form>
+            <div class="forminput">
+                <input type="text" name="Nama" placeholder=" " required>
+                <span>Nama</span>
+            </div>
+            <div class="forminput">
+                <input type="tel" name="noabsen" placeholder=" " required>
+                <span>No Absen</span>
+            </div>
+            <div class="forminput">
+                <input type="text" id="tanggal" placeholder=" ">
+                <span>Tanggal</span>
+            </div>
+            <div class="forminput" >
+                <label for="jam"> Shift :</label>
+                <p><input type="radio" id="jamabsen" name="jam"> Pagi</p>
+                <p><input type="radio" id="jamabsen" name="jam"> Siang</p>
+                <p><input type="radio" id="jamabsen" name="jam"> Malam</p>
+            </div>
+            <div>
+                <label for="masuk">Jam masuk :</label>
+                <input type="time" id="appt" name="masuk">
+                <label for="pulang">Sampai :</label>
+                <input type="time" id="appt" name="pulang">
+            </div>
+            <div>
+                <label for="upload">Upload Foto : </label>
+                <input type="file" id="myfile" name="upload">
+                <p><i>*menggunakan timestamp</i></p>
+            </div>
+            <button type="submit" id="kirimformabsen">Kirim</button>
+        </form>  
+    </main>
+
+    <footer>
+        <hr>
+        No copyright.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</script>
+</body>
+</html>
