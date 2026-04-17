@@ -2,11 +2,12 @@
     dateFormat: "d F Y",
   });
 
-flatpickr("#jam", {
-  enableTime: true,
-  noCalendar: true,
-  dateFormat: "H:i",
-  time_24hr: true
+flatpickr("#masuk, #pulang", {
+    enableTime: true,
+    noCalendar: true,
+    dateFormat: "H:i",
+    time_24hr: true,
+    disableMobile: true 
 });
 
 document.addEventListener("DOMContentLoaded", function () {
